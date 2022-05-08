@@ -1,20 +1,18 @@
 
 package problema1;
-
-public class Promedio {
     
-    public class Notas {
+public class Notas {
         private String nombreEstudiante;
         private double nota1;
         private double nota2;
         private double nota3;
         private double promedio;
         
-        public Promedio (String m){
+        public Notas (String m){
             nombreEstudiante = m;
         }
         
-        public Promedio (String nombre, double mat1){
+        public Notas (String nombre, double mat1){
             nombreEstudiante = nombre;
             nota1 = mat1;
         }
@@ -31,7 +29,7 @@ public class Promedio {
             nota3 = n;
         }
         public void calcularPromedio(){
-            promedio = (nota1 + nota2 + nota3 / 3);
+            promedio = ((nota1 + nota2 + nota3 )/ 3);
         }
         
         
@@ -64,5 +62,4 @@ public class Promedio {
     }
                 
     
-}
 }
